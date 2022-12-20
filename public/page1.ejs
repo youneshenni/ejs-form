@@ -6,7 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    Page 2
+<body><ul>
+    <% data.forEach(line => {
+        %>
+        <li>
+            <ul>
+                <li><%= line.firstName %></li>
+                <li><%= line.lastName %></li>
+            </ul>
+        </li>
+        <%
+    }) %>
+</ul>
 </body>
 </html>
